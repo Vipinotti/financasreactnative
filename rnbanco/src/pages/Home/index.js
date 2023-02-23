@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Balance from '../../components/Balance';
 import Movements from '../../components/Movements';
 
+
 const list = [
   {
     id:1,
@@ -33,7 +34,7 @@ export default function Home() {
                 <View>
                         <Header name="pinotti teste" />
 
-                        <Balance saldo="2.209" gastos="2.200" />
+                        <Balance saldo="2.209" gastos="- 2.200" />
 
                         <Text style={styles.titulo}>Movimentações recentes</Text>
                         <FlatList
@@ -52,9 +53,7 @@ const styles=StyleSheet.create({
     titulo:{
         fontSize:30,
         fontWeight:'bold',
-        marginLeft:14,
-        marginRight:14,
-        marginTop:14,
+        margin: 14
     },
     list:{
       marginStart:14,
