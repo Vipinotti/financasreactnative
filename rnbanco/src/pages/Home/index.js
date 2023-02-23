@@ -35,8 +35,11 @@ export default function Home() {
                         <Header name="pinotti teste" />
 
                         <Balance saldo="2.209" gastos="- 2.200" />
+                        
                         <Actions/>
+
                         <Text style={styles.titulo}>Movimentações recentes</Text>
+
                         <FlatList
                          style={styles.list}
                          data={list}

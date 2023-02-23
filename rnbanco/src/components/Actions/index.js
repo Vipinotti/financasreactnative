@@ -1,17 +1,36 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import {AntDesign} from '@expo/vector-icons'
 
 export default function Actions() {
  return (
-   <View style={styles.container}>
-    <Text>oi</Text>
+   <ScrollView style={styles.container} horizontal={true} showsHorizontalScrollIndicator={false}>
+    <TouchableOpacity  style={styles.actionButton}>
+        <View style={styles.areaButton}>
+            <AntDesign name="addfolder" size={26} color='#000'>
 
-   </View>
+            </AntDesign>
+        </View>
+        <Text style={styles.entrada}>Entradas</Text>
+    </TouchableOpacity>
+
+   </ScrollView>
   )
 }
 const styles=StyleSheet.create({
     container:{
+        margin:14,
+    },
+    actionButton:{
 
-    }
+    },
+    areaButton:{
+
+    },
+    entrada:{
+
+    },
+
+
 })
 
