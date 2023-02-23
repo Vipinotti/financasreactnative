@@ -9,7 +9,7 @@ export default function Actions() {
    </View>
   )
 }
-const styles=StyleSheet.creation({
+const styles=StyleSheet.create({
     container:{
 
     }
